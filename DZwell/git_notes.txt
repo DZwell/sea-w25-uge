@@ -1,0 +1,37 @@
+Git is a version control system that can be utilized locally
+	Repository = Data structure which stores historical record of changes in repo, commit objects, etc.
+
+	Commit = Saved changes to file
+	Push = Upload new version to server
+	Pull = Download file
+	Merge = Combine changes made in file
+	Branch = Timeline of file
+		Master branch = Original timeline
+		“New” Branch = New timeline parallel to Master
+	Head = Refers to object locally
+	Remote = Refers to object which exists in remote tempo
+
+Commands
+	git —version = find out if Git is installed/up to date
+	git init [project name] = Initializes new repo
+	git add = adds files to repo (Git will track changes)
+	git commit = Commits added files to repo as a change
+		-a = Commits all changes to all tracked files
+		-m = specify commit message
+	git config = Allows configuration changes to git
+		—(2 dashes) = Makes changes available across entire system
+	git status = Shows current status of repo including uncommitted changes, if changes have been moved to staging area
+	git log = Shows chronological log of commits to current repo
+	git checkout = Checkout diff version of code from current one
+	git diff = Create a “diff” view to demonstrate changes between two different versions of repo
+	git branch = List branches in current repo and indicate current branch
+		git branch [branch name] = Create new branch
+	git checkout [branch name] = Switch to another branch
+		-b (placed after checkout) = Create new branch AND switch to that branch
+		-D = Delete specified branch
+	git merge [branch name] = Merge history from [branch name] to current branch
+	git clone = Creates new repo that is clone of a remote repo
+	git remote = Lists all remote repos associated with current repo
+	git remote add = Add new remote repo to current repo
+	git push = Push latest changes to remote repo
+	git pull = Pull latest changes from remote repo 

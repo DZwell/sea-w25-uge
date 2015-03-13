@@ -1,0 +1,129 @@
+mk dir = Make new directory
+	-p = makes parent directory as needed
+	-v = makes mkdir tell you what it’s doing
+
+touch = Create new file
+
+mv = move file (Also used to rename files)
+	eg: mkdir backups
+	mv foo2 backups/foo3
+		Line 1 We created a new directory called backups.
+		Line 2 We moved the directory foo2 into the directory backups and renamed it as foo3
+
+cd <path> = Changes the working directory to <path>
+
+ls = Lists the directory content of <path>
+	ls -l = Lists… plus shows permissions in list form
+	ls -a = shows all files including hidden files
+		*”” = Specify listing (e.g ls *.doc lists .doc files)
+		? = Represents single character (e.g ls ?a* lists files with ‘a’ as 2nd letter)
+		[] = Lists a range of characters (e.g ls [sv]* lists files w/ ’s’ and ‘v’)
+			^ = looks for files which is NOT one of the following (e.g ls [^a-k]* lists files that don’t include letters a-k)
+
+pwd = Prints working directory
+
+cp = makes copy of file
+	-r = copies directory
+
+whomi = Prints current user
+
+rm = Remove file
+	-r = removes directory
+	-r -i = prompts before removing
+
+file = Prints the file type
+
+man  “command” = A manual for any command. Lists what it does and options to modify command
+
+adduser = Creates new user
+
+su = Switch user
+
+sudo = Performs command as super user
+
+chmod = Changes permissions of file or directory
+	d = directory
+	- = not a directory
+	rwx = read/write/execute
+		octal notation = each digit is 0-7 representing different combos of rwx
+			read/r = 4
+			write/w = 2
+			execute/x = 1
+		
+
+chown = Change owner of file/directory
+
+top = Show active processes
+
+ps = Show processes statuses
+
+grep = Search for pattern
+
+fg - Bring job to foreground
+
+jobs - List jobs in session
+
+KILL (or 9) = Force quit
+
+TERM = Request a process terminate normally
+
+STOP = Stop or pause process
+
+VARIABLE=value = Set local environment variable
+
+export VARIABLE=value = Set an environment variable that will be visible to child processes
+
+env = View environment variables
+
+bash = Start new session within current session
+
+echo = Display arguments sent to echo
+
+find . -name “search” = Look for files with the name search starting from current location
+
+grep “pattern” file = Find lines that contain pattern in given file
+
+somecommand < inputfile = Run somecommand with input from input file instead of keyboard
+
+somecommand < outputfile = Run somecommand with output to outputfile instead of terminal screen
+
+command1 | command2 = Pipe the output of command1 to the input of command2
+
+sudo apt-get update = Update computer’s catalog of available software
+
+sudo apt-get install build-essential = Install tools needed to build software from source code
+
+curl -o URL = Download file from URL
+
+tar -xvf FILENAME.tar.gz = Decompress tar.gz file to curent directory (Like unzipping)
+
+./configure = Run configure script that comes with source code. Creates a Makefile
+
+make = Run the build specified in the Makefile
+
+sudo make install = Run the install script from the Makefile (installs program)
+
+apt-get update = Updates package catalog on computer
+
+apt-cache search PATTERN = Search available packages for pattern
+
+apt-get install PACKAGE = Install one or more packages
+
+apt-get upgrade = Upgrades to latest version of installed packages
+
+apt-get remove PACKAGE = Removes package
+
+
+
+Path - A means to get to a particular file or directory on the system.
+	Absolute Path - Specify file/directory in relation to root dir (identified by / )
+	Relative Path - Specify file/directory in relation to current dir
+
+	
+
+
+
+
+
+
+		
